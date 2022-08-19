@@ -10,8 +10,8 @@ services:
 
   web:
     build:
-      context: . .
-      dockerfile: /Dockerfile
+      context:  ../
+      dockerfile: api_yamdb/Dockerfile
     restart: always
     volumes:
       - static_value:/api_yamdb/static/
